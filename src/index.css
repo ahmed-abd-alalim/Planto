@@ -1,1 +1,95 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+
+    /*********************
+    --> color 
+    **********************/
+    /* --> body bg */
+    --color-background: #1B2316;
+
+    /* --> items bg */
+    ---color-primary: #FFFFFF0D;
+    --color-stars: #FFF84E;
+
+    /* --> text color */
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #FFFFFFBF;
+
+    /* footer bg */
+    --color-footer-bg: #222C1D;
+
+
+    /*********************
+    --> border 
+    **********************/
+    --border-primary: 2px solid rgba(255, 255, 255, 0.45);
+    --border-secondary: 3px solid rgba(255, 255, 255, 0.45);
+    --border-tertiary: 2px solid #FFF;
+
+
+    /*********************
+    --> stroke 
+    **********************/
+    /* --> width */
+    --stroke-width-2: 2px;
+
+    /* --> color */
+    --stroke-color-primary: rgba(255, 255, 255, 0.40);
+
+
+    /*********************
+    --> border radius
+    **********************/
+    --border-radius-8: 8px;
+    --border-radius-12: 12px;
+    --border-radius-113: 113px;
+    --border-radius-50: 50%;
+
+
+    /*********************
+    --> blur
+    **********************/
+    --blur-primary: 10.100000381469727px;
+    --blur-secondary: 12.5px;
+    --blur-tertiary: 20px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+body {
+    height: 100%;
+    background: var(--color-background);
+    font-family: "Inter", sans-serif;
+    user-select: none;
+}
+
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
