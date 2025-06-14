@@ -5,9 +5,13 @@ export type props = {
   children: React.ReactNode
 }
 
-export type dataType = object[]
+export type productsType = object[]
+
+export type reviewsType = object[]
 
 export type stateType = {
-  appData: dataType
-  setAppData : React.Dispatch<React.SetStateAction<dataType>>
+ products:  productsType
+ setProducts : React.Dispatch<React.SetStateAction<productsType>>
+ reviews:  reviewsType
+ setReviews : React.Dispatch<React.SetStateAction<reviewsType>>
 }
