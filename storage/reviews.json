@@ -1,8 +1,26 @@
 [
   {
-    "img": "",
-    "name": "",
-    "stars": 0,
-    "review": ""
+    "img": "/images/users/1.png",
+    "name": "alena Patel",
+    "stars": 4.5,
+    "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..."
+  },
+  {
+    "img": "/images/users/2.png",
+    "name": "Maxn Raval",
+    "stars": 5,
+    "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..."
+  },
+  {
+    "img": "/images/users/3.png",
+    "name": "venely k",
+    "stars": 3.5,
+    "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..."
+  },
+  {
+    "img": "/images/users/4.png",
+    "name": "Lii thakur",
+    "stars": 4,
+    "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..."
   }
 ]
