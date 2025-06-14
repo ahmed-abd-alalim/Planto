@@ -1,0 +1,7 @@
+export{default as Button}from "./button"
+export{default as SectionName}from "./section-name"
+export{default as ProductCardPrimary}from "./product-card-primary"
+export{default as ProductCardSecondary}from "./product-card-primary"
+export{default as ReviewCardPrimary}from "./review-card-primary"
+export{default as ReviewCardSecondary}from "./review-card-secondary"
+export{default as BigCard}from "./big-card"
