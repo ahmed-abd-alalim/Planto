@@ -1,8 +1,11 @@
+import { Home } from "@pages";
 function App() {
   return (
     <>
       <div className="app-container">
-        <main></main>
+        <main>
+          <Home />
+        </main>
       </div>
     </>
   );
