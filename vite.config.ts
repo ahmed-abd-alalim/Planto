@@ -8,6 +8,7 @@ export default defineConfig({
     resolve: {
     alias: {
       '@':"src",
+      "@storage": "storage",
       '@components': "src/components",
       '@layouts': "src/layouts",
       '@types': "src/types",
