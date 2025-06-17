@@ -1,102 +1,94 @@
 @import "./imports.css";
 
 :root {
-
-    /*********************
+  /*********************
     --> color 
     **********************/
-    /* --> body bg */
-    --color-background: #1B2316;
-    --color-background-transparent: #1212123f;
+  /* --> body bg */
+  --color-background: #1b2316;
+  --color-background-transparent: #1212123f;
 
-    /* --> items bg */
-    ---color-primary: #FFFFFF0D;
-    --color-stars: #FFF84E;
+  /* --> items bg */
+  ---color-primary: #ffffff0d;
+  --color-stars: #fff84e;
 
-    /* --> text color */
-    --color-text-primary: #FFFFFF;
-    --color-text-secondary: #FFFFFFBF;
+  /* --> text color */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #ffffffbf;
 
-    /* footer bg */
-    --color-footer-bg: #222C1D;
+  /* footer bg */
+  --color-footer-bg: #222c1d;
 
-
-    /*********************
+  /*********************
     --> border 
     **********************/
-    --border-primary-width: 2px;
-    --border-primary-color: rgba(255, 255, 255, 0.45);
-    --border-secondary-width: 3px;
-    --border-secondary-color: rgba(255, 255, 255, 0.45);
-    --border-tertiary-width: 2px;
-    --border-tertiary-color: #FFF;
+  --border-primary-width: 2px;
+  --border-primary-color: rgba(255, 255, 255, 0.45);
+  --border-secondary-width: 3px;
+  --border-secondary-color: rgba(255, 255, 255, 0.45);
+  --border-tertiary-width: 2px;
+  --border-tertiary-color: #fff;
 
-
-    /*********************
+  /*********************
     --> stroke 
     **********************/
-    /* --> width */
-    --stroke-width-2: 2px;
+  /* --> width */
+  --stroke-width-2: 2px;
 
-    /* --> color */
-    --stroke-color-primary: rgba(255, 255, 255, 0.40);
+  /* --> color */
+  --stroke-color-primary: rgba(255, 255, 255, 0.4);
 
-
-    /*********************
+  /*********************
     --> border radius
     **********************/
-    --border-radius-8: 8px;
-    --border-radius-12: 12px;
-    --border-radius-113: 113px;
-    --border-radius-50: 50%;
+  --border-radius-8: 8px;
+  --border-radius-12: 12px;
+  --border-radius-113: 113px;
+  --border-radius-50: 50%;
 
-
-    /*********************
+  /*********************
     --> blur
     **********************/
-    --blur-primary: 10.100000381469727px;
-    --blur-secondary: 12.5px;
-    --blur-tertiary: 20px;
+  --blur-primary: 10.100000381469727px;
+  --blur-secondary: 12.5px;
+  --blur-tertiary: 20px;
 
-    /*********************
+  /*********************
     --> font
     **********************/
-    --website-font: "Inter", sans-serif;
+  --website-font: "Inter", sans-serif;
 }
 
-
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+  }
 
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-        margin: 0;
-        font-weight: normal;
-    }
+  ul {
+    list-style: none;
+  }
 
-    ul {
-        list-style: none;
-    }
+  img {
+    -webkit-user-drag: none;
+  }
 
-    img {
-        -webkit-user-drag: none;
-    }
+  body {
+    @apply bg-[var(--color-background)] h-full select-none font-[var(--website-font)];
+  }
 
-    body {
-        @apply bg-[var(--color-background)] h-full select-none font-[var(--website-font)]
-    }
+  .app-container {
+    @apply min-h-screen flex flex-col;
+  }
 
+  main {
+    @apply flex-1;
+  }
 
-    .app-container {
-        @apply min-h-screen flex flex-col
-    }
-
-    main {
-        @apply flex-1
-    }
-
-    ::-webkit-scrollbar {
-        @apply w-0
-    }
+  ::-webkit-scrollbar {
+    @apply w-0;
+  }
 }
