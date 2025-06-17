@@ -7,6 +7,7 @@
     **********************/
     /* --> body bg */
     --color-background: #1B2316;
+    --color-background-transparent: #1212123f;
 
     /* --> items bg */
     ---color-primary: #FFFFFF0D;
@@ -23,9 +24,12 @@
     /*********************
     --> border 
     **********************/
-    --border-primary: 2px solid rgba(255, 255, 255, 0.45);
-    --border-secondary: 3px solid rgba(255, 255, 255, 0.45);
-    --border-tertiary: 2px solid #FFF;
+    --border-primary-width: 2px;
+    --border-primary-color: rgba(255, 255, 255, 0.45);
+    --border-secondary-width: 3px;
+    --border-secondary-color: rgba(255, 255, 255, 0.45);
+    --border-tertiary-width: 2px;
+    --border-tertiary-color: #FFF;
 
 
     /*********************
@@ -53,41 +57,46 @@
     --blur-primary: 10.100000381469727px;
     --blur-secondary: 12.5px;
     --blur-tertiary: 20px;
+
+    /*********************
+    --> font
+    **********************/
+    --website-font: "Inter", sans-serif;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    font-weight: normal;
-}
 
-ul {
-    list-style: none;
-}
+@layer base {
 
-img {
-    -webkit-user-drag: none;
-}
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        font-weight: normal;
+    }
 
-body {
-    height: 100%;
-    background: var(--color-background);
-    font-family: "Inter", sans-serif;
-    user-select: none;
-}
+    ul {
+        list-style: none;
+    }
 
-.app-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+    img {
+        -webkit-user-drag: none;
+    }
 
-main {
-    flex: 1;
-}
+    body {
+        @apply bg-[var(--color-background)] h-full select-none font-[var(--website-font)]
+    }
 
-::-webkit-scrollbar {
-    width: 0px;
+
+    .app-container {
+        @apply min-h-screen flex flex-col
+    }
+
+    main {
+        @apply flex-1
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-0
+    }
 }

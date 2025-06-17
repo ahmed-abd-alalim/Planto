@@ -1,7 +1,7 @@
 import "./home.css";
 
 const Index = () => {
-  return <div></div>;
+  return <section></section>;
 };
 
 export default Index;
