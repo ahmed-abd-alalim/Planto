@@ -12,7 +12,7 @@ import {
   IoClose,
 } from "@/assets/icons";
 
-const Index = () => {
+const NavBar = () => {
   const [searchPage, setSearchPage] = useState(0);
 
   return (
@@ -81,4 +81,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default NavBar;
