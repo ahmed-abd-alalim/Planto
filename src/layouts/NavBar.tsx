@@ -71,16 +71,16 @@ const NavBar = () => {
           <IoClose className="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]" />
         </div>
         <ul className="text-center">
-          <li className="w-[9rem] h-[2.5rem] bg-[var(--color-primary)] rounded-md border-1 border-[var(--color-text-secondary)] flex items-center justify-center text-[var(--color-text-secondary)] font-medium cursor-pointer capitalize my-8 hover:border-[var(--color-text-primary)] hover:text-[var(--color-text-primary)]  transition-all hover:scale-105">
+          <li className="w-[9rem] h-[2.5rem] bg-[var(--color-primary)] rounded-md border-1 border-[var(--border-primary-color)] flex items-center justify-center text-[var(--color-text-secondary)] font-medium cursor-pointer capitalize my-8 hover:border-2 hover:text-[var(--color-text-primary)]  transition-all hover:scale-105">
             home
           </li>
-          <li className="w-[9rem] h-[2.5rem] bg-[var(--color-primary)] rounded-md border-1 border-[var(--color-text-secondary)] flex items-center justify-center text-[var(--color-text-secondary)] font-medium cursor-pointer capitalize my-8 hover:border-[var(--color-text-primary)] hover:text-[var(--color-text-primary)]  transition-all hover:scale-105">
+          <li className="w-[9rem] h-[2.5rem] bg-[var(--color-primary)] rounded-md border-1 border-[var(--border-primary-color)] flex items-center justify-center text-[var(--color-text-secondary)] font-medium cursor-pointer capitalize my-8 hover:border-2 hover:text-[var(--color-text-primary)]  transition-all hover:scale-105">
             plants type
           </li>
-          <li className="w-[9rem] h-[2.5rem] bg-[var(--color-primary)] rounded-md border-1 border-[var(--color-text-secondary)] flex items-center justify-center text-[var(--color-text-secondary)] font-medium cursor-pointer capitalize my-8 hover:border-[var(--color-text-primary)] hover:text-[var(--color-text-primary)]  transition-all hover:scale-105">
+          <li className="w-[9rem] h-[2.5rem] bg-[var(--color-primary)] rounded-md border-1 border-[var(--border-primary-color)] flex items-center justify-center text-[var(--color-text-secondary)] font-medium cursor-pointer capitalize my-8 hover:border-2 hover:text-[var(--color-text-primary)]  transition-all hover:scale-105">
             more
           </li>
-          <li className="w-[9rem] h-[2.5rem] bg-[var(--color-primary)] rounded-md border-1 border-[var(--color-text-secondary)] flex items-center justify-center text-[var(--color-text-secondary)] font-medium cursor-pointer capitalize my-8 hover:border-[var(--color-text-primary)] hover:text-[var(--color-text-primary)]  transition-all hover:scale-105">
+          <li className="w-[9rem] h-[2.5rem] bg-[var(--color-primary)] rounded-md border-1 border-[var(--border-primary-color)] flex items-center justify-center text-[var(--color-text-secondary)] font-medium cursor-pointer capitalize my-8 hover:border-2 hover:text-[var(--color-text-primary)]  transition-all hover:scale-105">
             contact
           </li>
         </ul>
