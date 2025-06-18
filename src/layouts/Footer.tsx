@@ -60,7 +60,7 @@ const Footer = () => {
               placeholder="enter email..."
               className="h-full w-[70%]  pl-3 pr-2 text-[var(--color-text-primary)] placeholder:text-[var(--color-text-secondary)] placeholder:capitalize placeholder:text-[.8rem] placeholder:opacity-50 focus:outline-none "
             />
-            <button className="h-[2.9rem] w-[30%] uppercase text-[--color-footer-bg] font-medium bg-[var(--color-text-primary)] text-[0.9rem] ">
+            <button className="h-[3rem] w-[30%] uppercase text-[--color-footer-bg] font-medium bg-[var(--color-text-primary)] text-[0.9rem] ">
               subscribe
             </button>
           </div>
