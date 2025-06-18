@@ -2,7 +2,7 @@ import { StateContext } from "./context";
 import { useEffect, useState } from "react";
 
 // import types
-import type { props, productsType, reviewsType } from "@/types";
+import type { props, productsType, reviewsType } from "@/assets/types";
 
 // import json data
 import productsData from "@storage/products.json";

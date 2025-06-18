@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import type { stateType } from "@/types";
+import type { stateType } from "@/assets/types";
 
 export const StateContext = createContext<stateType | null>(null);
 

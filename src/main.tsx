@@ -4,7 +4,7 @@ import "@/main.css";
 import App from "@/App";
 
 // import state
-import { StateProvider } from "@/state";
+import { StateProvider } from "@/assets/state";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
