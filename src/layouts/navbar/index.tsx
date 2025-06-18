@@ -63,7 +63,7 @@ const Index = () => {
         <div className="relative w-13/15 md:w-10/15 lg:w-8/15 h-2/20 md:h-2/20 lg:h-2/20 rounded-lg bg-[var(---color-primary)] border-1 border-[var(--border-primary-color)] flex items-center">
           <div className="w-2/15 lg:w-1/12 h-full flex items-center justify-center border-r-1 border-[var(--border-primary-color)]">
             <div
-              className="absolute z-2 bottom-18 md:bottom-27 lg:bottom-22 right-0 rounded-full border-1 border-[var(--border-primary-color)] w-8 h-8 bg-[var(---color-primary)] flex items-center justify-center"
+              className="absolute z-2 top-0 right-0 mt-[-3rem] rounded-full border-1 border-[var(--border-primary-color)] w-8 h-8 bg-[var(---color-primary)] flex items-center justify-center"
               onClick={() => setSearchPage(searchPage === 0 ? 1 : 0)}
             >
               <IoClose className="text-[var(--color-text-secondary)] cursor-pointer" />
