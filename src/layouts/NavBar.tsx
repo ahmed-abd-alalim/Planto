@@ -23,7 +23,7 @@ const NavBar = () => {
           <div className="w-6 md:w-7">
             <img src={logo} alt="logo" width={"100%"} />
           </div>
-          <span className="capitalize text-[var(--color-text-primary)] text-md">
+          <span className="capitalize text-[var(--color-text-primary)] text-md font-medium">
             planto.
           </span>
         </div>
