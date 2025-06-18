@@ -4,10 +4,13 @@ import { useState } from "react";
 import logo from "/logo.png";
 
 // import icon
-import { RiSearchLine, RiShoppingBag4Line } from "react-icons/ri";
-import { HiMenuAlt3 } from "react-icons/hi";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { IoClose } from "react-icons/io5";
+import {
+  RiSearchLine,
+  RiShoppingBag4Line,
+  HiMenuAlt3,
+  IoMdArrowDropdown,
+  IoClose,
+} from "@/assets/icons";
 
 const Index = () => {
   const [searchPage, setSearchPage] = useState(0);
