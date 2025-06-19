@@ -8,6 +8,7 @@ import {
   FaYoutube,
   FaSquareBehance,
 } from "react-icons/fa6";
+import { FaPlay, FaChevronRight } from "react-icons/fa";
 
 export {
   RiSearchLine,
@@ -19,4 +20,6 @@ export {
   FaSquareGithub,
   FaYoutube,
   FaSquareBehance,
+  FaPlay,
+  FaChevronRight,
 };

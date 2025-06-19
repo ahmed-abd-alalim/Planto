@@ -19,7 +19,7 @@ const NavBar = () => {
   return (
     <>
       {/* navbar */}
-      <nav className="flex justify-between items-center pt-5 px-4 lg:px-8 mb-10">
+      <nav className="flex justify-between items-center pt-5 px-4 lg:px-8 mb-10 md:mb-20">
         <div className="flex items-center gap-2">
           <div className="w-6 md:w-7">
             <img src={logo} alt="logo" width={"100%"} />
