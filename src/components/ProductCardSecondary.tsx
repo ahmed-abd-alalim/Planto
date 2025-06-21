@@ -137,7 +137,7 @@ const ProductCardSecondary = () => {
                   <h3 className="text-[var(--color-text-primary)] text-[1.2rem] font-normal mt-1">
                     Calathea plant
                   </h3>
-                  <button className="mt-2 border-2 border-[var(--color-text-secondary)] w-[6rem] h-[2rem] rounded-md text-[var(--color-text-primary)] text-[.7rem] font-medium cursor-pointer pb-[.1rem] hover:opacity-80 transition-opacity">
+                  <button className="mt-3 border-2 border-[var(--color-text-secondary)] w-[6rem] h-[2rem] rounded-md text-[var(--color-text-primary)] text-[.7rem] font-medium cursor-pointer pb-[.1rem] hover:opacity-80 transition-opacity">
                     Buy Now
                   </button>
                 </div>
@@ -150,7 +150,7 @@ const ProductCardSecondary = () => {
             <button
               key={idx}
               onClick={(): void => goToSlide(idx)}
-              className={` h-2 rounded-full ${
+              className={` h-2 rounded-full cursor-pointer ${
                 currentSlide === idx
                   ? "bg-[var(--color-text-primary)] w-4"
                   : "bg-[var(--border-primary-color)] w-2"
