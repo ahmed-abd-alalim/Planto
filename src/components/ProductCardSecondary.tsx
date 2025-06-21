@@ -130,7 +130,7 @@ const ProductCardSecondary = () => {
                 <div className="w-[100%] h-[60%] scale-105 translate-y-[-.6rem]">
                   <img src={"/images/products/1.png"} alt="" width={"100%"} />
                 </div>
-                <div className="w-[100%] h-[40%] flex flex-col justify-center ml-3">
+                <div className="w-[100%] h-[40%] flex flex-col justify-center items-start ml-3">
                   <span className="text-[var(--color-text-secondary)] text-[.8rem] capitalize">
                     Trendy House Plant
                   </span>
