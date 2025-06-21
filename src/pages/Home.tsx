@@ -6,6 +6,7 @@ import {
   ProductCardSecondary,
   ReviewCardSecondary,
   BigCardPrimary,
+  SectionName,
 } from "@/components";
 
 const Home = () => {
@@ -46,6 +47,7 @@ const Home = () => {
 
       {/* trendy plants */}
       <section>
+        <SectionName />
         <BigCardPrimary />
       </section>
     </>
