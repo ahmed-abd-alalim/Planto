@@ -9,8 +9,8 @@ const Home = () => {
     <>
       <header className="grid grid-cols-1 md:grid-cols-[65%_35%] lg:grid-cols-[60%_40%] px-4 lg:px-8">
         <div className="order-2 md:order-1 flex flex-col justify-between">
-          <div className="text-center md:text-start">
-            <h1 className="capitalize text-[var(--color-text-primary)] font-semibold text-[2.5rem] md:text-[4rem] lg:text-[6rem]">
+          <div className="text-center md:text-start mt-2">
+            <h1 className="capitalize text-[var(--color-text-primary)] font-semibold text-[2.5rem] md:text-[4rem] lg:text-[6rem] leading-[1.2]">
               Breath Natureal
             </h1>
             <h4 className="text-[var(--color-text-secondary)] font-medium md:ml-1 lg:ml-2">
@@ -30,11 +30,11 @@ const Home = () => {
             </div>
           </div>
 
-          <div>
+          <div className="flex justify-center md:justify-start  mt-[2.2rem]  md:mt-[7rem] lg:mt-[9rem]">
             <ReviewCardSecondary />
           </div>
         </div>
-        <div className="flex justify-center items-center mt-[3rem] order-1">
+        <div className="flex justify-center  mt-[3rem] order-1">
           <ProductCardSecondary />
         </div>
       </header>

@@ -31,7 +31,7 @@ const ProductCardSecondary = () => {
   }, [instanceRef]);
 
   return (
-    <div className="w-[16.5rem] lg:w-[18rem] flex-shrink-0 relative">
+    <div className="w-[18rem] h-[21rem] relative">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         // width={550}
@@ -127,10 +127,10 @@ const ProductCardSecondary = () => {
                 className="min-w-full p-3 flex flex-col justify-end keen-slider__slide"
                 key={index}
               >
-                <div className="w-[100%] h-[60%] scale-105 translate-y-[-.6rem]">
+                <div className="w-[100%] h-[65%] scale-105 translate-y-[-.6rem]">
                   <img src={"/images/products/1.png"} alt="" width={"100%"} />
                 </div>
-                <div className="w-[100%] h-[40%] flex flex-col justify-center items-start ml-3">
+                <div className="w-[100%] h-[35%] flex flex-col justify-center items-start ml-3">
                   <span className="text-[var(--color-text-secondary)] text-[.8rem] capitalize">
                     Trendy House Plant
                   </span>
@@ -145,7 +145,7 @@ const ProductCardSecondary = () => {
             ))}
           </div>
         </div>
-        <div className="absolute bottom-0 right-0 left-0 translate-y-[-.6rem] flex justify-center mt-3 space-x-2">
+        <div className="absolute bottom-0 right-0 left-0  flex justify-center mt-3 space-x-2">
           {[0, 1, 2].map((idx) => (
             <button
               key={idx}
