@@ -1,11 +1,13 @@
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useEffect, useState } from "react";
+import { useStateContext } from "@/assets/state";
 
 // import icon
 import { FaChevronRight } from "@/assets/icons";
 
 const ProductCardSecondary = () => {
+  const { products } = useStateContext();
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -122,20 +124,20 @@ const ProductCardSecondary = () => {
       <div className="w-[100%] h-[115%] absolute z-4 right-0 bottom-0 left-0 px-2 flex overflow-hidden translate-y-[-1rem]">
         <div className="overflow-hidden">
           <div className="w-full h-full flex keen-slider" ref={sliderRef}>
-            {[0, 1, 2].map((_, index) => (
+            {products.slice(1, 4).map((_, index) => (
               <div
                 className="min-w-full p-3 flex flex-col justify-end keen-slider__slide"
                 key={index}
               >
                 <div className="w-[100%] h-[65%] scale-105 translate-y-[-.6rem]">
-                  <img src={"/images/products/1.png"} alt="" width={"100%"} />
+                  <img src={_.img} alt="" width={"100%"} />
                 </div>
                 <div className="w-[100%] h-[35%] flex flex-col justify-center items-start ml-3">
                   <span className="text-[var(--color-text-secondary)] text-[.8rem] capitalize">
                     Trendy House Plant
                   </span>
                   <h3 className="text-[var(--color-text-primary)] text-[1.2rem] font-normal mt-1">
-                    Calathea plant
+                    {_.name}
                   </h3>
                   <button className="mt-3 border-2 border-[var(--color-text-secondary)] w-[6rem] h-[2rem] rounded-md text-[var(--color-text-primary)] text-[.7rem] font-medium cursor-pointer pb-[.1rem] hover:opacity-80 transition-opacity">
                     Buy Now
