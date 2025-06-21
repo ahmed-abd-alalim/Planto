@@ -7,6 +7,7 @@ import { ProductCardSecondary, ReviewCardSecondary } from "@/components";
 const Home = () => {
   return (
     <>
+      {/* header */}
       <header className="grid grid-cols-1 md:grid-cols-[65%_35%] lg:grid-cols-[60%_40%] px-4 lg:px-8">
         <div className="order-2 md:order-1 flex flex-col justify-between">
           <div className="text-center md:text-start mt-2">
@@ -38,6 +39,9 @@ const Home = () => {
           <ProductCardSecondary />
         </div>
       </header>
+
+      {/* trendy plants */}
+      <section></section>
     </>
   );
 };

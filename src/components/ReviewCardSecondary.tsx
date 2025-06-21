@@ -1,6 +1,14 @@
+// import state
+import { useStateContext } from "@/assets/state";
+
+// import icon
+import { IoIosStar } from "@/assets/icons";
+
 const ReviewCardSecondary = () => {
+  const { reviews } = useStateContext();
+
   return (
-    <div className="w-[17rem] relative">
+    <div className="w-[17rem] h-[10rem] relative">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         // width={409}
@@ -48,6 +56,31 @@ const ReviewCardSecondary = () => {
           </linearGradient>
         </defs>
       </svg>
+
+      <div className="w-full h-full absolute top-0 left-0 p-5">
+        <div className="mb-3 flex items-center gap-5">
+          <div className="w-[2.8rem] h-[2.8rem] rounded-full overflow-hidden">
+            <img src={reviews[0].img} alt="" width={"100%"} />
+          </div>
+          <div>
+            <span className="text-[var(--color-text-primary)]">
+              {reviews[0].name}
+            </span>
+            <div className="flex gap-1">
+              {[0, 0, 0, 0].map((_, i) => (
+                <IoIosStar
+                  className="text-[var(--color-stars)] text-[.8rem]"
+                  key={i}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="text-[var(--color-text-secondary)] text-[.8rem]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt...
+        </div>
+      </div>
     </div>
   );
 };

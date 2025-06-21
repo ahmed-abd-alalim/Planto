@@ -1,5 +1,5 @@
 import { StateContext } from "./context";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 // import types
 import type { props, productsType, reviewsType } from "@/assets/types";
@@ -9,14 +9,8 @@ import productsData from "@storage/products.json";
 import reviewsData from "@storage/reviews.json";
 
 export const StateProvider = ({ children }: props): React.JSX.Element => {
-  const [products, setProducts] = useState<productsType>([]);
-
-  const [reviews, setReviews] = useState<reviewsType>([]);
-
-  useEffect(() => {
-    setProducts(productsData);
-    setReviews(reviewsData);
-  }, []);
+  const [products, setProducts] = useState<productsType>(productsData);
+  const [reviews, setReviews] = useState<reviewsType>(reviewsData);
 
   return (
     <StateContext.Provider
