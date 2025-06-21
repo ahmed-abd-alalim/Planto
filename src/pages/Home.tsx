@@ -2,7 +2,11 @@
 import { FaPlay } from "@/assets/icons";
 
 // import component
-import { ProductCardSecondary, ReviewCardSecondary } from "@/components";
+import {
+  ProductCardSecondary,
+  ReviewCardSecondary,
+  BigCardPrimary,
+} from "@/components";
 
 const Home = () => {
   return (
@@ -41,7 +45,9 @@ const Home = () => {
       </header>
 
       {/* trendy plants */}
-      <section></section>
+      <section>
+        <BigCardPrimary />
+      </section>
     </>
   );
 };
