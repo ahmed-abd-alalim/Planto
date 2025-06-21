@@ -33,7 +33,7 @@ const ProductCardSecondary = () => {
   }, [instanceRef]);
 
   return (
-    <div className="w-[18rem] h-[21rem] relative">
+    <div className="w-[16rem] h-[19rem] lg:w-[18rem] lg:h-[21rem] relative">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         // width={550}
