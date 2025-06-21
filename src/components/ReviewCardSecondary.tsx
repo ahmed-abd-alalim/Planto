@@ -1,6 +1,6 @@
 const ReviewCardSecondary = () => {
   return (
-    <div className="w-[18rem] relative">
+    <div className="w-[17rem] relative">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         // width={409}
