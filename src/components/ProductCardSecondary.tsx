@@ -1,7 +1,35 @@
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
+import { useEffect, useState } from "react";
+
 // import icon
 import { FaChevronRight } from "@/assets/icons";
 
 const ProductCardSecondary = () => {
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
+
+  const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    slides: {
+      perView: 1,
+      spacing: 10,
+    },
+  });
+
+  const goToSlide = (idx: number): void => {
+    instanceRef.current?.moveToIdx(idx);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      instanceRef.current?.next();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [instanceRef]);
+
   return (
     <div className="w-[16.5rem] lg:w-[18rem] flex-shrink-0 relative">
       <svg
@@ -91,23 +119,50 @@ const ProductCardSecondary = () => {
           </linearGradient>
         </defs>
       </svg>
-      <div className="w-full h-full absolute top-0 right-0 bottom-0 left-0 px-4">
-        <div className="w-[100%] h-[40%] translate-y-[-4rem]">
-          <img src={"/images/products/1.png"} alt="" width={"100%"} />
+      <div className="w-[100%] h-[115%] absolute z-4 right-0 bottom-0 left-0 px-2 flex overflow-hidden translate-y-[-1rem]">
+        <div className="overflow-hidden">
+          <div className="w-full h-full flex keen-slider" ref={sliderRef}>
+            {[0, 1, 2].map((_, index) => (
+              <div
+                className="min-w-full p-3 flex flex-col justify-end keen-slider__slide"
+                key={index}
+              >
+                <div className="w-[100%] h-[60%] scale-105 translate-y-[-.6rem]">
+                  <img src={"/images/products/1.png"} alt="" width={"100%"} />
+                </div>
+                <div className="w-[100%] h-[40%] flex flex-col justify-center ml-3">
+                  <span className="text-[var(--color-text-secondary)] text-[.8rem] capitalize">
+                    Trendy House Plant
+                  </span>
+                  <h3 className="text-[var(--color-text-primary)] text-[1.2rem] font-normal mt-1">
+                    Calathea plant
+                  </h3>
+                  <button className="mt-2 border-2 border-[var(--color-text-secondary)] w-[6rem] h-[2rem] rounded-md text-[var(--color-text-primary)] text-[.7rem] font-medium cursor-pointer pb-[.1rem] hover:opacity-80 transition-opacity">
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="w-[100%] h-[60%] ml-5 flex flex-col justify-center">
-          <span className="text-[var(--color-text-secondary)] text-[.8rem] capitalize">
-            Trendy House Plant
-          </span>
-          <h3 className="text-[var(--color-text-primary)] text-[1.2rem] font-normal mt-1">
-            Calathea plant
-          </h3>
-          <button className="mt-2 border-2 border-[var(--color-text-secondary)] w-[6rem] h-[2rem] rounded-md text-[var(--color-text-primary)] text-[.7rem] font-medium cursor-pointer pb-[.1rem] hover:opacity-80 transition-opacity">
-            Buy Now
-          </button>
+        <div className="absolute bottom-0 right-0 left-0 translate-y-[-.6rem] flex justify-center mt-3 space-x-2">
+          {[0, 1, 2].map((idx) => (
+            <button
+              key={idx}
+              onClick={(): void => goToSlide(idx)}
+              className={` h-2 rounded-full ${
+                currentSlide === idx
+                  ? "bg-[var(--color-text-primary)] w-4"
+                  : "bg-[var(--border-primary-color)] w-2"
+              }`}
+            />
+          ))}
         </div>
       </div>
-      <div className="absolute bottom-[25%] right-[10%] cursor-pointer">
+      <div
+        className="absolute bottom-[25%] right-[10%] z-5 cursor-pointer"
+        onClick={(): void => instanceRef.current?.next()}
+      >
         <FaChevronRight className="text-[var(--color-text-primary)] text-[.9rem]" />
       </div>
     </div>
