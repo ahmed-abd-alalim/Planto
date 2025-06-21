@@ -8,7 +8,7 @@ const ReviewCardSecondary = () => {
   const { reviews } = useStateContext();
 
   return (
-    <div className="w-[17rem] h-[10rem] relative">
+    <div className="w-[18rem] h-[10rem] relative">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         // width={409}
@@ -57,7 +57,7 @@ const ReviewCardSecondary = () => {
         </defs>
       </svg>
 
-      <div className="w-full h-full absolute top-0 left-0 p-5">
+      <div className="w-full h-full absolute top-0 left-0 p-7">
         <div className="mb-3 flex items-center gap-5">
           <div className="w-[2.8rem] h-[2.8rem] rounded-full overflow-hidden">
             <img src={reviews[0].img} alt="" width={"100%"} />
