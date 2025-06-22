@@ -1,13 +1,13 @@
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useEffect, useState } from "react";
-import { useStateContext } from "@/assets/state";
 
+// import type
+import type { productsType } from "@/assets/types";
 // import icon
 import { FaChevronRight } from "@/assets/icons";
 
-const ProductCardSecondary = () => {
-  const { products } = useStateContext();
+const ProductCardSecondary = ({ cardData }: { cardData: productsType[] }) => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -124,7 +124,7 @@ const ProductCardSecondary = () => {
       <div className="w-[100%] h-[115%] absolute z-4 right-0 bottom-0 left-0 px-2 flex overflow-hidden translate-y-[-1rem]">
         <div className="overflow-hidden">
           <div className="w-full h-full flex keen-slider" ref={sliderRef}>
-            {products.slice(1, 4).map((_, index) => (
+            {cardData.slice(1, 4).map((_, index) => (
               <div
                 className="min-w-full p-3 flex flex-col justify-end keen-slider__slide"
                 key={index}

@@ -26,7 +26,7 @@
   --border-primary-width: 2px;
   --border-primary-color: rgba(255, 255, 255, 0.45);
   --border-secondary-width: 3px;
-  --border-secondary-color: rgba(255, 255, 255, 0.45);
+  --border-secondary-color: rgba(255, 255, 255, 0.27);
   --border-tertiary-width: 2px;
   --border-tertiary-color: #fff;
 
@@ -38,14 +38,6 @@
 
   /* --> color */
   --stroke-color-primary: rgba(255, 255, 255, 0.4);
-
-  /*********************
-    --> border radius
-    **********************/
-  --border-radius-8: 8px;
-  --border-radius-12: 12px;
-  --border-radius-113: 113px;
-  --border-radius-50: 50%;
 
   /*********************
     --> blur

@@ -1,3 +1,6 @@
+// import state
+import { useStateContext } from "@/assets/state";
+
 // import icon
 import { FaPlay } from "@/assets/icons";
 
@@ -10,6 +13,8 @@ import {
 } from "@/components";
 
 const Home = () => {
+  const { products, reviews } = useStateContext();
+
   return (
     <>
       {/* header */}
@@ -37,18 +42,24 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center md:justify-start  mt-[2.2rem]  md:mt-[7rem] lg:mt-[9rem]">
-            <ReviewCardSecondary />
+            <ReviewCardSecondary reviewsData={reviews} />
           </div>
         </div>
         <div className="flex justify-center  mt-[3rem] order-1">
-          <ProductCardSecondary />
+          <ProductCardSecondary cardData={products} />
         </div>
       </header>
 
       {/* trendy plants */}
-      <section>
-        <SectionName />
-        <BigCardPrimary />
+      <section className="mt-[5rem] mb-[3rem] px-4 lg:px-8 flex flex-col gap-[6rem]">
+        <SectionName sectionNmae={"our top selling"} />
+        <BigCardPrimary caedStyle={0} cadrData={products[5]} />
+        <BigCardPrimary caedStyle={1} cadrData={products[2]} />
+      </section>
+
+      {/* Top Selling */}
+      <section className="mt-[5rem] mb-[3rem] px-4 lg:px-8 flex flex-col gap-[6rem]">
+        <SectionName sectionNmae={"Our Top Selling"} />
       </section>
     </>
   );
