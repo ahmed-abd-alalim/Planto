@@ -10,6 +10,9 @@ import {
   ReviewCardSecondary,
   BigCardPrimary,
   SectionName,
+  ProductCardPrimary,
+  ReviewCardPrimary,
+  BigCardSecondary,
 } from "@/components";
 
 const Home = () => {
@@ -18,9 +21,9 @@ const Home = () => {
   return (
     <>
       {/* header */}
-      <header className="grid grid-cols-1 md:grid-cols-[65%_35%] lg:grid-cols-[60%_40%] px-4 lg:px-8">
+      <header className="grid grid-cols-1 md:grid-cols-[65%_35%] lg:grid-cols-[60%_40%] px-5 lg:px-10">
         <div className="order-2 md:order-1 flex flex-col justify-between">
-          <div className="text-center md:text-start mt-2">
+          <div className="text-center md:text-start mt-8 md:mt-0">
             <h1 className="capitalize text-[var(--color-text-primary)] font-semibold text-[2.5rem] md:text-[4rem] lg:text-[6rem] leading-[1.2]">
               Breath Natureal
             </h1>
@@ -51,15 +54,37 @@ const Home = () => {
       </header>
 
       {/* trendy plants */}
-      <section className="mt-[5rem] mb-[3rem] px-4 lg:px-8 flex flex-col gap-[6rem]">
-        <SectionName sectionNmae={"our top selling"} />
+      <section className="mt-[7rem] mb-[3rem] px-5 lg:px-10 flex flex-col gap-[6rem]">
+        <SectionName sectionNmae={"Our Trendy plants"} />
         <BigCardPrimary caedStyle={0} cadrData={products[5]} />
         <BigCardPrimary caedStyle={1} cadrData={products[2]} />
       </section>
 
       {/* Top Selling */}
-      <section className="mt-[5rem] mb-[3rem] px-4 lg:px-8 flex flex-col gap-[6rem]">
+      <section className="mt-[7rem] mb-[3rem] px-5 lg:px-10 flex flex-col gap-[8rem]">
         <SectionName sectionNmae={"Our Top Selling"} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[4rem] gap-y-[7rem] m-auto">
+          {products.slice(1, 7).map((_, i) => (
+            <ProductCardPrimary cadrData={products[i]} key={i} />
+          ))}
+        </div>
+      </section>
+
+      {/* Customer Review*/}
+      <section className="mt-[7rem] mb-[3rem] px-5 lg:px-10 flex flex-col gap-[6rem]">
+        <SectionName sectionNmae={"Customer Review"} />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[4rem] gap-y-[2rem] m-auto">
+          {products.slice(0, 3).map((_, i) => (
+            <ReviewCardPrimary reviewsData={reviews[i]} key={i} />
+          ))}
+        </div>
+      </section>
+
+      {/* Our Best o2*/}
+      <section className="mt-[7rem] mb-[3rem] px-5 lg:px-10 flex flex-col gap-[6rem]">
+        <SectionName sectionNmae={"Our Best o2"} />
+        <BigCardSecondary cardData={products} />
       </section>
     </>
   );

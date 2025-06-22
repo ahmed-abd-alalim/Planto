@@ -14,7 +14,7 @@ const BigCard = ({
   return (
     <div className="w-full md:h-[20rem] lg:h-[25rem] grid grid-cols-1 md:grid-cols-2 rounded-[2rem] md:rounded-[5rem] lg:rounded-[8rem] bg-[var(--color-primary)] border-1 border-[var(--border-secondary-color)] backdrop-blur-sm">
       <div
-        className={`w-[20rem] md:w-[22rem] lg:w-[28rem] translate-y-[-5rem] scale-110 md:scale-115 lg:scale-110 m-auto order-1 ${
+        className={`w-[20rem] md:w-[22rem] lg:w-[28rem] translate-y-[-5rem] scale-110 md:scale-110 m-auto order-1 ${
           caedStyle === 1 && "md:order-2"
         }`}
       >

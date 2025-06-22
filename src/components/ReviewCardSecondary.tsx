@@ -62,11 +62,11 @@ const ReviewCardSecondary = ({
       <div className="w-full h-full absolute top-0 left-0 p-7">
         <div className="mb-3 flex items-center gap-5">
           <div className="w-[2.8rem] h-[2.8rem] rounded-full overflow-hidden">
-            <img src={reviewsData[0].img} alt="" width={"100%"} />
+            <img src={reviewsData[3].img} alt="" width={"100%"} />
           </div>
           <div>
             <span className="text-[var(--color-text-primary)]">
-              {reviewsData[0].name}
+              {reviewsData[3].name}
             </span>
             <div className="flex gap-1">
               {[0, 0, 0, 0].map((_, i) => (
@@ -79,8 +79,7 @@ const ReviewCardSecondary = ({
           </div>
         </div>
         <div className="text-[var(--color-text-secondary)] text-[.8rem]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt...
+          {reviewsData[3].review.split(" ").slice(0, 17).join(" ")}
         </div>
       </div>
     </div>
