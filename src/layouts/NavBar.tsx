@@ -20,7 +20,12 @@ const NavBar = () => {
     <>
       {/* navbar */}
       <nav className="flex justify-between items-center pt-5 px-4 lg:px-8 mb-10 md:mb-25">
-        <div className="flex items-center gap-2">
+        <div
+          className="flex items-center gap-2"
+          data-aos="fade-right"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out"
+        >
           <div className="w-6 md:w-7">
             <img src={logo} alt="logo" width={"100%"} />
           </div>
@@ -30,22 +35,51 @@ const NavBar = () => {
         </div>
         <div className="hidden md:block">
           <ul className="flex gap-10">
-            <li className="text-[var(--color-text-secondary)] capitalize cursor-pointer text-sm hover:text-[var(--color-text-primary)] transition-colors font-medium">
+            <li
+              className="text-[var(--color-text-secondary)] capitalize cursor-pointer text-sm hover:text-[var(--color-text-primary)] transition-colors font-medium"
+              data-aos="fade-down"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+            >
               home
             </li>
-            <li className="text-[var(--color-text-secondary)] capitalize cursor-pointer text-sm hover:text-[var(--color-text-primary)] transition-colors font-medium">
+            <li
+              className="text-[var(--color-text-secondary)] capitalize cursor-pointer text-sm hover:text-[var(--color-text-primary)] transition-colors font-medium"
+              data-aos="fade-down"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="400"
+            >
               plants type
               <IoMdArrowDropdown className="inline-block" />
             </li>
-            <li className="text-[var(--color-text-secondary)] capitalize cursor-pointer text-sm hover:text-[var(--color-text-primary)] transition-colors font-medium">
+            <li
+              className="text-[var(--color-text-secondary)] capitalize cursor-pointer text-sm hover:text-[var(--color-text-primary)] transition-colors font-medium"
+              data-aos="fade-down"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="500"
+            >
               more
             </li>
-            <li className="text-[var(--color-text-secondary)] capitalize cursor-pointer text-sm hover:text-[var(--color-text-primary)] transition-colors font-medium">
+            <li
+              className="text-[var(--color-text-secondary)] capitalize cursor-pointer text-sm hover:text-[var(--color-text-primary)] transition-colors font-medium"
+              data-aos="fade-down"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="600"
+            >
               contact
             </li>
           </ul>
         </div>
-        <div className="flex items-center gap-8">
+        <div
+          className="flex items-center gap-8"
+          data-aos="fade-left"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out"
+        >
           <RiSearchLine
             className="text-xl md:text-xl text-[var(--color-text-secondary)] cursor-pointer hover:text-[var(--color-text-primary)] transition-colors"
             onClick={() => setSearchPage(searchPage === 0 ? 1 : 0)}

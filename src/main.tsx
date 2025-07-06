@@ -6,6 +6,9 @@ import App from "@/App";
 // import state
 import { StateProvider } from "@/assets/state";
 
+// import  AOS css
+import "aos/dist/aos.css";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <StateProvider>
