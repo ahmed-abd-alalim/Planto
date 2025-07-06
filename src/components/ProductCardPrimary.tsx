@@ -6,7 +6,7 @@ import { RiShoppingBag4Line } from "@/assets/icons";
 
 const ProductCardPrimary = ({ cadrData }: { cadrData: productsType }) => {
   return (
-    <div className="w-[20rem] h-[23rem] relative">
+    <div className="w-[20rem] h-[23rem] relative cursor-pointer transition duration-[200ms] hover:scale-105 focus:scale-105">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         // width={550}
