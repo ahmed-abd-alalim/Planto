@@ -84,4 +84,56 @@
   ::-webkit-scrollbar {
     @apply w-0;
   }
+
+  .animate-button-hover:hover {
+    animation: button-hover 0.3s ease-in-out forwards;
+    transition: 0.8s;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-in forwards;
+  }
+
+  .animate-fade-right {
+    animation: fade-right 0.6s ease-in forwards;
+  }
+}
+
+@keyframes button-hover {
+  from {
+    background: linear-gradient(
+      to right,
+      var(--color-text-primary),
+      rgba(0, 0, 0, 0) 0%
+    );
+  }
+  to {
+    background: linear-gradient(
+      to right,
+      var(--color-text-primary),
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.4rem);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
 }

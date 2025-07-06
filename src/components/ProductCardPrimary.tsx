@@ -109,7 +109,7 @@ const ProductCardPrimary = ({ cadrData }: { cadrData: productsType }) => {
             <span className="text-[var(--color-text-primary)] text-[1.2rem] font-medium">
               Rs. {cadrData.price}/-
             </span>
-            <button className="text-[var(--color-text-primary)] text-[.9rem] border-1 border-[var(--color-text-primary)] rounded-md py-2 px-2 hover:opacity-80 transition-opacity cursor-pointer">
+            <button className="text-[var(--color-text-primary)] text-[.9rem] border-1 border-[var(--color-text-primary)] rounded-md py-2 px-2 cursor-pointer animate-button-hover hover:text-[var(--color-background)]">
               <RiShoppingBag4Line />
             </button>
           </div>

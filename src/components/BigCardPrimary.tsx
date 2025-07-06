@@ -35,10 +35,10 @@ const BigCard = ({
           Rs. {cadrData.price}/-
         </span>
         <div className="flex gap-4">
-          <button className="border-1 border-[var(--color-text-primary)] rounded-md px-10 py-2 text-[var(--color-text-primary)] font-bold text-[1.1rem] cursor-pointer hover:opacity-80 transition-opacity">
+          <button className="border-1 border-[var(--color-text-primary)] rounded-md px-10 py-2 text-[var(--color-text-primary)] font-md text-[1.1rem] cursor-pointer animate-button-hover hover:text-[var(--color-background)]">
             Explore
           </button>
-          <button className="border-1 border-[var(--color-text-primary)] rounded-md px-3 text-[var(--color-text-primary)] text-[1.4rem] cursor-pointer hover:opacity-80 transition-opacity">
+          <button className="border-1 border-[var(--color-text-primary)] rounded-md px-3 text-[var(--color-text-primary)] text-[1.4rem] cursor-pointer animate-button-hover hover:text-[var(--color-background)]">
             <RiShoppingBag4Line />
           </button>
         </div>

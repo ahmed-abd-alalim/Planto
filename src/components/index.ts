@@ -1,4 +1,3 @@
-export { default as Button } from "./Button";
 export { default as SectionName } from "./SectionName";
 export { default as ProductCardPrimary } from "./ProductCardPrimary";
 export { default as ProductCardSecondary } from "./ProductCardSecondary";

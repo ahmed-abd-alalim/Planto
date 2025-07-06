@@ -32,7 +32,7 @@ const Home = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </h4>
             <div className="flex justify-center md:justify-start gap-5 items-center mt-5">
-              <button className="w-[8rem] h-[2.5rem] border-2 border-[var(--color-text-primary)] rounded-md  text-[var(--color-text-primary)] capitalize font-medium cursor-pointer hover:opacity-80 transition-opacity">
+              <button className="w-[8rem] h-[2.5rem] border-2 border-[var(--color-text-primary)] rounded-md  text-[var(--color-text-primary)] capitalize font-medium cursor-pointer animate-button-hover hover:text-[var(--color-background)]">
                 Explore
               </button>
               <div className="flex items-center gap-2 text-[var(--color-text-primary)] hover:opacity-80 transition-opacity cursor-pointer">
