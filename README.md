@@ -19,6 +19,17 @@ Planto is a fully responsive eCommerce plants website template, designed to work
    </a>
 </p>
 
+## Pages
+
+- 🏠 Home – Stunning landing page for plants
+
+## Features
+
+<p>✅ Fully Responsive – Adapts to all screen sizes</p>
+<p>✅ React + Vite – Fast and efficient development setup</p>
+<p>✅ Tailwind css 4  – Modern and flexible UI components</p>
+<p>✅ Optimized Performance – Lightweight and fast loading</p>
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -37,17 +48,6 @@ cd Planto
 npm i
 npm run dev
 ```
-
-## Pages
-
-- 🏠 Home – Stunning landing page for plants
-
-## Features
-
-<p>✅ Fully Responsive – Adapts to all screen sizes</p>
-<p>✅ React + Vite – Fast and efficient development setup</p>
-<p>✅ Tailwind css 4  – Modern and flexible UI components</p>
-<p>✅ Optimized Performance – Lightweight and fast loading</p>
 
 ## Contact
 
