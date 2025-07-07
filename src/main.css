@@ -70,7 +70,7 @@
   }
 
   body {
-    @apply bg-[var(--color-background)] h-full select-none font-[var(--website-font)];
+    @apply bg-[var(--color-background)] h-full select-none font-[var(--website-font)] overflow-x-hidden;
   }
 
   .app-container {
